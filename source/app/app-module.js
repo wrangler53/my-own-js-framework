@@ -1,6 +1,7 @@
 import { MainModule } from "../WranglerJS/main";
 import { rootComponent } from "./app-component";
 import { header } from "./components/header";
+import { appRoutes } from "./app-routes"
 
 class AppModule extends MainModule {
     constructor(config) {
@@ -10,7 +11,8 @@ class AppModule extends MainModule {
 
 export const appModule = new AppModule({
     components: [
-        rootComponent,
         header
-    ]
+    ],
+    wrangler: rootComponent,
+    routes: appRoutes
 })

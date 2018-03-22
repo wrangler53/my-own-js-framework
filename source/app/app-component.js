@@ -11,9 +11,6 @@ export const rootComponent = new AppComponent({
     selector: 'root',
     template: `
         <app-header></app-header>
-        <div>
-            <h4>Component works</h4>
-            <h4>Component works 11</h4>
-        </div>
+        <router-page></router-page>
     `
 })
